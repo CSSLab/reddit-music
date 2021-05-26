@@ -26,9 +26,7 @@ Note that when we create the heatmaps we require artist release date information
 
 
 ### Word comparison
-We also compare the *social genres* to words embedded into the same Reddit space.  We use the file `src/artist_genre/wordclouds.ipynb` to generate word clouds for each of the *social genres*. Four of the word clouds are featured in this image:
-
-![Word clouds](https://ibb.co/52xyCKX)
+We also compare the *social genres* to words embedded into the same Reddit space.  We use the file `src/artist_genre/wordclouds.ipynb` to generate word clouds for each of the *social genres*. 
 
 
 ## Social dimensions
@@ -37,9 +35,8 @@ Brief introduction: Similar to how word embeddings are capable of encoding seman
 ### Projected artists and cultures onto the social dimensions.
 We begin by studying how the Reddit community as a whole differs from the music-sharing subset of Reddit. For this we create a many density plot using the file `src/social_dimensions/many_density_plot.ipynb`. 
 
-After we provide a more local analysis of how different artists and *social genres* differ on the social dimensions. The main plot is the is a scatter plot featuring how the various social genres differ on the social dimensions (featured below). This plot is created in file `src/social_dimensions/social_stripplot.ipynb`. 
+After we provide a more local analysis of how different artists and *social genres* differ on the social dimensions. The main plot is the is a scatter plot featuring how the various social genres differ on the social dimensions. This plot is created in file `src/social_dimensions/social_stripplot.ipynb`. 
 
-![Social dimensions](https://ibb.co/QrXP4ZW)
 
 ## Extra-musical sharing
 To measure extra-musical sharing we develop two metrics, based on two different observations. First, extra-musical sharing is more likely to occur in a wide range of contexts. Second, extra-musical sharing can be associated with a joke. 
