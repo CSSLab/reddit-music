@@ -12,7 +12,7 @@ To create the dataset we found all instances of musicians shared through their Y
 consists of all artists shared more than 20 times alongside their respective *social genres* (discussed below). 
 
 ## Reddit embedding
-To study artists we relied on the Reddit embedding designed in previous work [1]. The embedding is available in `data/reddit-master-metadata` and `data/reddit-master-vectors`. 
+To study artists we relied on the Reddit embedding designed in previous work [1]. The embedding we used has not been released yet, but can be remade using a method similar to that in the previous work.. 
 The vectors consist of the 150-dimension Reddit embedding and the metadata provides some statistics about each subreddit. 
 
 ## Embedding artists into Reddit space to create *social genres*
