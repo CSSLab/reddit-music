@@ -15,7 +15,7 @@ consists of all artists shared more than 20 times alongside their respective *so
 To study artists we relied on the Reddit embedding designed in previous work [1]. The embedding we used has not been released yet, but can be remade using a method similar to that in the previous work.. 
 The vectors consist of the 150-dimension Reddit embedding and the metadata provides some statistics about each subreddit. 
 
-## Embedding artists into Reddit space to create *social genres*
+### Embedding artists into Reddit space to create *social genres*
 The file `src/artist_genre/social_genres.ipynb` takes in the raw music sharing dataset, embeds musicians into the Reddit embedding and then clusters the artists into *social genres*
 
 Once the social genres are defined we run the file `src/artist_genre/naming_genres.ipynb` to generate visuals explaining each *social genre*. This method provides a broad overview of the social genres, but some social genres require deeper analysis. 
@@ -32,7 +32,7 @@ We also compare the *social genres* to words embedded into the same Reddit space
 ## Social dimensions
 Brief introduction: Similar to how word embeddings are capable of encoding semantic relationships, the Reddit embedding is capable of capturing underlying connections between Reddit communities. In particular, this has encouraged the creation of social dimensions in the Reddit embedding which can be found in existing literature [2]. Each community is weighed on several social dimensions like gender, age, and political leanings, these weights are found in `data/scores_z.csv`. Using this method we can augment our understanding of musicians. 
 
-### Projected artists and cultures onto the social dimensions.
+### Projected artists and *social genres* onto the social dimensions.
 We begin by studying how the Reddit community as a whole differs from the music-sharing subset of Reddit. For this we create a many density plot using the file `src/social_dimensions/many_density_plot.ipynb`. 
 
 After we provide a more local analysis of how different artists and *social genres* differ on the social dimensions. The main plot is the is a scatter plot featuring how the various social genres differ on the social dimensions. This plot is created in file `src/social_dimensions/social_stripplot.ipynb`. 
