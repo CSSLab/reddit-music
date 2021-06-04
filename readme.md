@@ -6,15 +6,13 @@ This is the official repository for the paper ["Imagine All the People: Characte
 ## The RedditMusic Dataset
 
 ### How was it created? 
-To create RedditMusic, we extracted all instances of songs being shared via YouTube videos or Spotify links. A full explanation is available in the "Data" section of the paper. The final dataset can be at `/data/Reddit_Sub_Com_f_genre.csv` and this 
-consists of all artists shared more than 20 times alongside their respective *social genres* (discussed below). 
+To create RedditMusic, we extracted all instances of songs being shared via YouTube videos or Spotify links. A full explanation is available in the "Data" section of the [paper](http://www.cs.toronto.edu/~ashton/pubs/music-on-reddit-icwsm21.pdf). The final dataset is located at `/data/Reddit_Sub_Com_f_genre.csv` and consists of all shares of artists who were shared more than 20 times, along with their respective *social genres* (discussed below). 
 
 ## Reddit embedding
-To study artists we relied on the Reddit embedding designed in previous work [1]. The embedding we used has not been released yet, but can be remade using a method similar to that in the previous work.. 
-The vectors consist of the 150-dimension Reddit embedding and the metadata provides some statistics about each subreddit. 
+To study artists we used the Reddit embedding designed in previous work [[1]](http://www.cs.toronto.edu/~ashton/pubs/actdiv-www2019.pdf). The embedding vectors consist of the 150-dimension Reddit embedding and the metadata provides some statistics about each subreddit. 
 
 ### Embedding artists into Reddit space to create *social genres*
-The file `src/artist_genre/social_genres.ipynb` takes in the raw music sharing dataset, embeds musicians into the Reddit embedding and then clusters the artists into *social genres*
+The file `src/artist_genre/social_genres.ipynb` takes in the raw music sharing dataset, embeds musicians into the Reddit embedding and then clusters the artists into *social genres*.
 
 Once the social genres are defined we run the file `src/artist_genre/naming_genres.ipynb` to generate visuals explaining each *social genre*. This method provides a broad overview of the social genres, but some social genres require deeper analysis. 
 
@@ -48,7 +46,6 @@ we first need to calculate the z-score between artists and subreddits in which t
 
 
 Related work:
-To better grasp some of the ideas outlined here, we recommend you look over
-[1] Waller, I., & Anderson, A. (2019, May). Generalists and specialists: Using community embeddings to quantify activity diversity in online platforms. In The World Wide Web Conference (pp. 1954-1964).
-[2] Waller, I., & Anderson, A. (2020). Community embeddings reveal large-scale cultural organization of online platforms. arXiv preprint arXiv:2010.00590.
+[1] Waller, I., & Anderson, A. (2019, May). [Generalists and specialists: Using community embeddings to quantify activity diversity in online platforms](http://www.cs.toronto.edu/~ashton/pubs/actdiv-www2019.pdf). In The World Wide Web Conference (pp. 1954-1964).
+[2] Waller, I., & Anderson, A. (2020). [Community embeddings reveal large-scale cultural organization of online platforms](http://www.cs.toronto.edu/~ashton/pubs/cultural-dims2020.pdf). arXiv preprint arXiv:2010.00590.
 
