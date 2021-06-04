@@ -1,14 +1,12 @@
 
 # Music Sharing on Reddit
 
-This is the official Github for our paper "Imagine All the People: Characterizing Social Music Sharing on Reddit". This repository will link the materials necessary to recreate our analysis. This includes both the music sharing dataset and the Python files for generating visuals. 
+This is the official repository for the paper ["Imagine All the People: Characterizing Social Music Sharing on Reddit"](http://www.cs.toronto.edu/~ashton/pubs/music-on-reddit-icwsm21.pdf). It contains RedditMusic, our dataset of 1.3 million instances of music sharing on Reddit, and all the materials necessary to replicate our analyses. 
 
+## The RedditMusic Dataset
 
-
-## Introduction to the dataset
-
-### How did we create the dataset? 
-To create the dataset we found all instances of musicians shared through their YouTube videos or Spotify links. A full explanation is available in the "data" section of our paper. The final dataset can be at `/data/Reddit_Sub_Com_f_genre.csv' and this 
+### How was it created? 
+To create RedditMusic, we extracted all instances of songs being shared via YouTube videos or Spotify links. A full explanation is available in the "Data" section of the paper. The final dataset can be at `/data/Reddit_Sub_Com_f_genre.csv` and this 
 consists of all artists shared more than 20 times alongside their respective *social genres* (discussed below). 
 
 ## Reddit embedding
