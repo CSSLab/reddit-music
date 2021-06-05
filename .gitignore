@@ -8,3 +8,6 @@ data/reweighted_null_counts.csv
 visuals/powerpoint/*
 data/reddit-master-metadata
 data/reddit-master-vectors
+data/scores_z.csv
+data/wfc_vecs_1575657682
+data/wfc_meta_1575657682
