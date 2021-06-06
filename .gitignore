@@ -11,3 +11,4 @@ data/reddit-master-vectors.tsv
 data/scores_z.csv
 data/wfc_vecs_1575657682.tsv
 data/wfc_meta_1575657682.tsv
+master-dataset/*
