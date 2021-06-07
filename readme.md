@@ -37,6 +37,7 @@ To quantify the second observation, we first calculate the z-score between artis
 
 
 Related work:
+
 [1] Waller, I., & Anderson, A. (2019, May). [Generalists and specialists: Using community embeddings to quantify activity diversity in online platforms](http://www.cs.toronto.edu/~ashton/pubs/actdiv-www2019.pdf). In The World Wide Web Conference (pp. 1954-1964).
 
 [2] Waller, I., & Anderson, A. (2020). [Community embeddings reveal large-scale cultural organization of online platforms](http://www.cs.toronto.edu/~ashton/pubs/cultural-dims2020.pdf). arXiv preprint arXiv:2010.00590.
