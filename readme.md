@@ -5,7 +5,7 @@ This is the official repository for the paper ["Imagine All the People: Characte
 
 ## The RedditMusic Dataset
 
-To create RedditMusic, we extracted all instances of songs being shared via YouTube videos or Spotify links. A full explanation is available in the "Data" section of the [paper](http://www.cs.toronto.edu/~ashton/pubs/music-on-reddit-icwsm21.pdf). The final dataset of 1.3 million instances of music sharing on Reddit is located at `RedditMusic.csv` and consists of all shares of artists who were shared more than 20 times, along with their respective *social genres* (discussed below). 
+To create RedditMusic, we extracted all instances of songs being shared via YouTube videos or Spotify links. A full explanation is available in the "Data" section of the [paper](http://www.cs.toronto.edu/~ashton/pubs/music-on-reddit-icwsm21.pdf). The final dataset of 1.3 million instances of music sharing on Reddit can be downloaded [here](https://www.cs.toronto.edu/~walleris/redditmusic-data/RedditMusic.csv) and consists of all shares of artists who were shared more than 20 times, along with their respective *social genres* (discussed below). 
 
 ## Embedding artists into Reddit space to create *social genres*
 To study artists we used the Reddit embedding designed in previous work [[1]](http://www.cs.toronto.edu/~ashton/pubs/actdiv-www2019.pdf). The file `src/artist_genre/social_genres.ipynb` takes in the raw music sharing dataset, embeds musicians into the Reddit embedding and then clusters the artists into *social genres*.
